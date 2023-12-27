@@ -59,7 +59,38 @@ A abordagem usada para a construção de funções assíncronas foi o “async a
 
 Nesta aula, o instrutor ensina como criar uma função para fazer a conexão com uma API e retornar os dados. Além disso, ele mostra como exportar essa função para ser utilizada em outros arquivos. Para exibir os dados na tela, é criado um novo arquivo com outras funções. É explicado como importar esse arquivo no index.html e como selecionar o elemento da lista para trabalhar com ele. São utilizados os data attributes para individualizar os elementos e manipular o DOM. Em seguida, é criada uma função para construir os elementos li da lista. É mostrado como definir a classe e o conteúdo HTML desses elementos. Também é explicado como retornar esses elementos para serem utilizados em outras partes do código. É feita a importação da função que faz a requisição e traz a lista de vídeos da API. É criada uma função assíncrona para consumir essa lista e utilizar os dados para criar os cards dos vídeos. O instrutor ressalta a importância de aguardar a resolução das promessas para ter acesso aos valores corretos. Ele sugere que os espectadores aprofundem seus conhecimentos em assincronicidade no curso "JavaScript consumindo e tratando dados de uma API". Por fim, ele menciona que no próximo vídeo serão exploradas mais funcionalidades do DOM e funções nativas do JavaScript.
 
+### Aula 02: forEach() - Video 3
 
-Estou usando esta forma para exportar: export const conectaAPI = { listarVideos };
-no console do browser está retornando este erro: Uncaught SyntaxError: Unexpected token 'export'.
-você consegue me explicar o por que do erro?
+Nesta aula, o instrutor explica como conectar duas funcionalidades em um projeto utilizando JavaScript. A primeira função é responsável por criar itens da lista no arquivo index.html, enquanto a segunda função retorna os valores de uma API presente no arquivo db.json. O objetivo é conectar essas duas funcionalidades para que, para cada item da lista da API, um item da lista do index.html seja criado.
+
+O instrutor utiliza o método forEach() para percorrer cada item da lista da API e cria uma função que será executada para cada item. Dentro dessa função, ele utiliza o método appendChild() para adicionar elementos à lista do index.html.
+
+Ele explica a relação entre pais e filhos no DOM, onde a lista do index.html é o pai dos elementos li. Portanto, o método appendChild() adiciona filhos à lista, que são os elementos li criados pela função constroiCard().
+
+O instrutor torna os elementos da lista dinâmicos, substituindo os valores estáticos no código HTML pelos valores dinâmicos utilizando Template Strings.
+
+Por fim, ele chama a função listaVídeos() para fazer a conexão entre as duas funcionalidades e verifica no navegador que os vídeos da API estão sendo listados corretamente no index.html.
+
+### Aula 02: Crescendo a lista - Video 4
+
+Nesta aula, o instrutor mostra como adicionar novos vídeos no AluraPlay. Ele explica como fazer isso no Visual Studio Code, alterando o código no arquivo db.json. Também ensina a copiar a URL de um vídeo do YouTube e ajustar a imagem, nome e descrição no código. No final, o instrutor mostra que o novo vídeo já está visível na tela inicial do AluraPlay, mas ressalta que seria melhor ter um formulário para adicionar vídeos. Ele promete abordar esse assunto na próxima aula.
+
+### Aula 02: Para saber mais: mergulhe no JavaScript
+
+Para individualizar elementos e conseguirmos selecioná-los no JavaScript para manipular o DOM, foram inseridos data-attributes. A Juliana Negreiros te explica melhor sobre esse termo em seu Alura Mais [Data Attributes do HTML5](https://cursos.alura.com.br/extra/alura-mais/data-attributes-do-html5-c109).
+
+Após selecionar esses elementos com o querySelector gostaríamos de inserir um código HTML dentro deles. Com isso, construímos a função constroiCard() e usamos o innerHTML e atribuímos a ele um trecho de código em forma de string com o auxílio das template strings para torná-lo dinâmico. Você pode assistir mais sobre esse assunto no Alura Mais [Template String](https://cursos.alura.com.br/extra/alura-mais/template-string-c123) do Felipe Nascimento e também ir além: aprender mais formas de manipular strings, lendo o artigo [Strings com JavaScript:](https://www.alura.com.br/artigos/strings-com-javascript-o-que-sao-e-como-manipular) o que são e como manipulá-las do André Bessa.
+
+Com o intuito de tornar o código mais legível e separar funções e arquivos de acordo com a sua responsabilidade no projeto, utilizamos o import e export para aproveitar funções de outros arquivos como a listaVideos() que está localizada no arquivo conectaApi.js. Quer entender melhor como isso foi feito? Vêm com o Mario Souto em seu artigo [Como funciona o import e export do JavaScript?.](https://www.alura.com.br/artigos/como-funciona-o-import-e-export-do-javascript)
+
+Para conseguir aplicar a função constroiCard() em cada um dos itens que retornaram da lista de vídeos do servidor, aplicamos o método forEach (método abordado no curso JavaScript: métodos de array). Dentro dele, foi construído uma função com uma sintaxe diferente, utilizando =>, que se assemelha a uma flecha. E não é só semelhança: o nome desses tipo de função é arrow function do inglês ‘função flecha’. Descubra mais sobre elas com o Felipe Nascimento no artigo [Conhecendo Arrow Functions.](https://www.alura.com.br/artigos/conhecendo-arrow-functions)
+
+### Aula 02 Conclusão: Nessa aula, você aprendeu como:
+
+Criar requisições GET para consumir uma API;
+Manipular o DOM para criar elementos a partir do JavaScript;
+Inserir novos objetos em um arquivo JSON.
+
+## Aula 03: Criando novos Elementos
+
+### Aula 03: Requisição POST - Video 1
