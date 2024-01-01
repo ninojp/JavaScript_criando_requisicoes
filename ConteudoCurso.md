@@ -94,3 +94,42 @@ Inserir novos objetos em um arquivo JSON.
 ## Aula 03: Criando novos Elementos
 
 ### Aula 03: Requisição POST - Video 1
+
+Nesta aula, o instrutor ensina como criar uma requisição POST para salvar novos dados no db.json. Ele utiliza a função fetch para fazer a conexão com a API, configurando o método da requisição como POST e especificando o tipo de conteúdo como "application/json". É necessário enviar um body na requisição, contendo os dados que serão cadastrados. O instrutor utiliza o método JSON.stringify para transformar o objeto em uma string e retorna o resultado da conexão utilizando o método .json(). Além disso, ele explica como importar a função criada em outros arquivos.
+
+### Aula 03: Captando eventos - Video 2
+
+Nesta aula, o instrutor parabeniza o espectador por ter aprendido a fazer uma requisição POST e explica que esse conhecimento será útil ao longo da carreira de desenvolvimento Front-End. Ele mostra como conectar a função de criação de vídeo com o formulário do arquivo "enviarvideo.html" utilizando atributos de dados. No arquivo "criarVideo.js", o instrutor seleciona os elementos do formulário e os atributos de dados utilizando o método "document.querySelector" e a propriedade ".value" para obter os valores digitados pelo usuário. Ele também aborda a questão da descrição do vídeo, utilizando a função "Math.random()" para gerar um número aleatório e o método "toString()" para convertê-lo em uma string. Por fim, ele explica como capturar os valores após o clique no botão de envio do formulário e evitar o recarregamento da página utilizando o método "addEventListener" e o método "preventDefault()".
+
+### Aula 03: Para saber mais: números aleatórios
+
+Math.random()
+A função Math.random() é usada para retornar um número pseudoaleatório de ponto flutuante entre 0 e 1. Para conseguirmos um número maior, precisamos multiplicar esse retorno pelo intervalo desejado. No nosso caso, gostaríamos de receber um valor aleatório entre 1 e 10, então definimos como: Math.random() * 10.
+
+O retorno desse trecho de código traria um número real gigantesco, como 5.252057315392287 e 7.8684543703382076.
+
+Math.floor()
+Para transformar o resultado da função anterior em um número inteiro usamos a função Math.floor(). Ela é usada para arredondar o número passado como parâmetro para seu inteiro mais próximo, levando como base o valor menor.
+
+Para entender melhor sobre essas funções, sobre a geração de números aleatórios e outra maneira de chegar nesse resultado você pode acessar o artigo "[A função Math.random() no JavaScript na criação de números pseudoaleatórios](https://www.alura.com.br/artigos/funcao-math-random-javascript-numeros-pseudoaleatorios)".
+
+### Aula 03: Enviar vídeos - Video 3
+
+Nesta aula, o instrutor discute a integração de duas funções para enviar dados para uma API. Ele explica a importância de importar a função conectaApi e chamar a função conectaApi.criaVideo dentro da função criarVideo. É necessário tornar a função assíncrona e utilizar o await para aguardar a resolução da promise. O instrutor destaca a importância de enviar os dados na ordem correta e adiciona um feedback ao usuário sobre o envio do vídeo. Ele menciona que ainda não testou se o código funciona corretamente e que na próxima aula será abordada a implementação da funcionalidade de pesquisa na lista de vídeos.
+
+### Aula 03: Para saber mais: GET versus POST
+
+Para fazer uma solicitação GET simples com fetch, o único parâmetro obrigatório é a URL como argumento, por isso não havíamos declarado o método na função listaVideos(). Para uma solicitação POST, você precisará passar um objeto das opções de configuração como um segundo argumento. O objeto opcional pode receber vários parâmetros diferentes, mas o essencial é a declaração de que está usando o método POST. Você pode ler mais sobre as diferenças entre os dois tipos de requisição no artigo [Diferenças entre GET e POST](https://www.alura.com.br/artigos/diferencas-entre-get-e-post) do Yuri Matheus.
+
+O método de requisição POST foi projetado para solicitar que o servidor web aceite os dados anexados no corpo da mensagem de requisição para armazenamento. Ele é normalmente usado quando se faz o upload de um arquivo ou envia-se um formulário web completo. Uma dica para você lembrar da função do POST é lembrar do termo que várias pessoas usam quando enviam fotos ou postagens em redes sociais: postar.
+
+### Aula 03 Conclusão: Nessa aula, você aprendeu como:
+
+Salvar dados na API através do método POST;
+Estruturar requisições do tipo POST enviadas com o fetch API;
+Diferenciar method, headers e body;
+Captar evento de envio (submit) em formulários.
+
+## Aula 04: Buscando Elementos
+
+### Aula 04: Busca de vídeos - Video 1
