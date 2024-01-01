@@ -160,3 +160,35 @@ Remover elementos filhos de um container com removeChild.
 
 ### Aula 05: Carregamento da lista - Video 1
 
+Nesta aula, o palestrante aborda a implementação de mensagens de erro para melhorar a experiência do usuário em um site. Ele mostra como adicionar uma mensagem de erro caso os vídeos não apareçam na tela, utilizando um bloco try-catch no código. O palestrante destaca a importância de realizar esse tipo de implementação para treinar habilidades em HTML e CSS. Ele sugere que o espectador tente criar uma mensagem de erro mais elaborada e realizar outras verificações de erros. No próximo vídeo, será abordado o tratamento de erros na criação de vídeos.
+
+### Aula 05: Inserção de vídeos - Video 2
+
+Nesta aula, o instrutor aborda a prevenção de erros na inserção de vídeos em um formulário. Ele ensina como implementar uma condicional para verificar a conexão antes de enviar o vídeo e, caso a conexão não esteja ok, lançar um erro informando que não foi possível enviar o vídeo. O instrutor também mostra como capturar esse erro e exibi-lo em um alerta na página. Ele incentiva os espectadores a personalizarem as mensagens de erro de acordo com suas preferências. Por fim, menciona que no próximo vídeo será abordado como evitar problemas na busca de vídeos.
+
+### Aula 05: Busca não encontrada - Video 3
+
+Nesta aula, o instrutor discute sobre validações de erros em um projeto JavaScript. Ele menciona que já foram feitas duas validações diferentes, uma para a lista de vídeos e outra para o envio de novos vídeos. No entanto, falta adicionar uma validação para a barra de pesquisa, caso seja pesquisado um termo que não exista na lista. O instrutor demonstra como fazer essa validação, adicionando um if que verifica se o tamanho da lista de resultados da busca é igual a zero. Ele salva as alterações e realiza um teste, mostrando que a mensagem de erro é exibida corretamente. O instrutor destaca a importância de se preocupar com a experiência do usuário e parabeniza o espectador por ter chegado até aquele ponto do vídeo.
+
+### Aula 05: Para saber mais: porque lidar com erros?
+
+Aqui na Alura valorizamos muito o termo “Dev em T”. O Dev em T é aquele que busca conhecimento além da sua área de especialização. No início de carreira, se aprofunda em um tema. Ao longo da carreira, procura navegar em temas próximos
+
+Tendo isso em mente, eu compreendo que a área de User Experience conversa muito bem com a da pessoa desenvolvedora front-end, como também dizem os artigos [UX Design em T: O que Front-End tem a ver com UX?](https://www.alura.com.br/artigos/ux-design-em-t-front-end-a-ver-com-ux) e [UX Design em T: o que um programador tem a ver com a UX?](https://www.alura.com.br/artigos/ux-design-em-t-o-que-um-programador-tem-a-ver-com-a-ux). É um campo de estudo que se estudarmos para ter uma base facilitará na compreensão de decisões do projeto, como no tratamento de erros que fizemos nessa aula.
+
+- Um dos assuntos que mostram a necessidade de lidar com erros são as [heurísticas de Nielsen](https://www.alura.com.br/artigos/10-heuristicas-de-nielsen-uma-formula-pra-evitar-erros-basicos-de-usabilidade), onde contamos com as seguintes heurísticas:
+
+Ajude os usuários a reconhecerem, diagnosticarem e recuperarem-se de erros.
+Essa heurística é perfeita para descrever o que acabamos de fazer nessa aula. Inserimos mensagens claras e próximas do conteúdo que causou o erro. Isso ajuda o usuário a encontrar e/ou entender o problema e facilita na solução deles.
+
+### Aula 05 Conclusão: Nessa aula, você aprendeu como:
+
+Lidar com erros com try catch;
+Criar novos erros com throw new Error;
+Detectar erros através de condicionais;
+Verificar se uma lista está vazia pelo seu tamanho;
+Imprimir mensagens de erro.
+
+### Aula 05 Conclusão - Video 4
+
+Nesta aula, o instrutor parabeniza o estudante pelo progresso no curso e recapitula o que foi feito até o momento. Ele destaca a transformação da página da Alura Play em dinâmica, com a adição de vídeos através de uma API externa e o uso de requisições GET assíncronas em JavaScript. Também é mostrado como inserir novos vídeos através de um formulário e cadastrar com sucesso. A funcionalidade de pesquisa também é implementada, filtrando os vídeos pelo título. O instrutor ressalta a importância de reutilizar os conhecimentos adquiridos em outros projetos e incentiva a interação no fórum do Discord. No final, ele deseja bons estudos e encerra a transmissão.
