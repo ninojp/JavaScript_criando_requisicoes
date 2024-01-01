@@ -133,3 +133,30 @@ Captar evento de envio (submit) em formulários.
 ## Aula 04: Buscando Elementos
 
 ### Aula 04: Busca de vídeos - Video 1
+
+Nesta aula, o instrutor discute a implementação de uma ferramenta de busca na aplicação AluraPlay. Ele explica a necessidade dessa funcionalidade e mostra como realizar a busca utilizando uma URL específica. O instrutor também mostra como aplicar essa funcionalidade no código, criando uma nova função assíncrona chamada "buscaVideo" no arquivo "conectaApi.js". Ele destaca que essa função é semelhante à função "listaVideos", mas com a diferença na URL para realizar a busca. Por fim, ele exporta a função "buscaVideo" juntamente com as outras funções do arquivo.
+
+### Aula 04: Busca dinâmica - Video 2
+
+Nesta aula, o instrutor explica como funciona a busca no servidor local através da URL. Ele mostra como criar uma função para realizar essa busca dinâmica e como receber o valor do campo de pesquisa e enviá-lo para a função criada. O instrutor também demonstra como importar um arquivo JavaScript chamado "buscarVideo.js" no arquivo HTML principal e conectar a função "buscarVideo" com a função "conectaApi" através de um import. Dentro da função "buscarVideo", é criada uma constante chamada "busca" que recebe o resultado da função "conectaApi.buscaVideo()". O instrutor explica que essa função é assíncrona porque retorna uma promise e é necessário aguardar sua resolução. Em seguida, ele mostra como detectar o valor do campo de pesquisa no arquivo HTML, adicionando um atributo "data-pesquisa" ao elemento de input e selecionando-o no arquivo JavaScript com o método "querySelector". O valor do campo de pesquisa é enviado para a função "conectaApi.buscarVideo" através do método "addEventListener" aplicado ao botão de pesquisa. O instrutor também adiciona um evento "click" ao botão e utiliza uma arrow function para chamar a função "buscarVideo" passando o evento como parâmetro. Ele utiliza o método "preventDefault" para evitar que a página seja recarregada ao clicar no botão. Por fim, o instrutor adiciona um console.log para testar se a busca está funcionando corretamente. Ele demonstra o teste no navegador, digitando a palavra "memes" na barra de pesquisa e clicando no botão de pesquisa. O resultado da busca é exibido no console, mostrando que a pesquisa está funcionando. No próximo vídeo, será mostrado como filtrar e exibir os resultados da busca na tela do Alura Play.
+
+### Aula 04: Reutilizar funções - Video 3
+
+Nesta aula, o instrutor discute a reutilização de funções em um projeto. Ele mostra como reutilizar o código existente ao invés de repeti-lo. Para isso, ele adiciona um "export default" antes da função "constroiCard" no arquivo "mostrarVideos.js" e importa essa função no arquivo "buscarVideos.js". Em seguida, ele utiliza a função "constroiCard" para criar um card para cada elemento da lista e adicioná-lo à lista principal. Dessa forma, ao pesquisar um termo, o vídeo correspondente é adicionado à lista de vídeos, mantendo os vídeos anteriores.
+
+### Aula 04: Lista filtrada - Video 4
+
+Nesta aula, a instrutora comenta sobre a implementação da funcionalidade de busca no Alura Play. Ela relata um problema em que, ao testar a funcionalidade, toda a lista de vídeos era exibida em vez de apenas o item pesquisado. Para resolver esse problema, é proposto o uso de um laço de repetição while que remove todos os itens da lista antes de imprimir o item pesquisado. A instrutora explica que o laço de repetição irá executar enquanto a lista tiver um primeiro filho, ou seja, enquanto houver itens na lista, o primeiro filho será removido. Assim, a lista ficará vazia e em seguida será criada uma nova lista apenas com os itens que correspondem ao termo pesquisado. A instrutora destaca a importância de saber como remover filhos de um pai, pois essa situação pode ocorrer em outros projetos. Além disso, ela menciona que já foram concluídos todos os pedidos do líder técnico, mas sugere a melhoria do projeto adicionando tratamento de erros. A próxima aula abordará esse tema.
+
+### Aula 04 Conclusão: Nessa aula, você aprendeu como:
+
+Como utilizar parâmetros para buscar objetos específicos na API;
+Recolher dados escritos em um campo de digitação;
+Detectar eventos de click com addEventListener;
+Verificar se há elementos filhos em um container com firstChild;
+Remover elementos filhos de um container com removeChild.
+
+## Aula 05: Lidando com erros
+
+### Aula 05: Carregamento da lista - Video 1
+

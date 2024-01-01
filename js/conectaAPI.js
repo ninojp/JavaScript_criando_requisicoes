@@ -23,9 +23,14 @@ async function criaVideo(titulo, descricao, url, imagem){
     const conexaoConvertida = await conexao.json();
     return conexaoConvertida;
 };
-
-export const conectaAPI = { listarVideosApi, criaVideo };
-
+//=================================================================================
+async function buscaVideo(termoBuscado){
+    const conexao = await fetch(`http://localhost:3000/videos?q=${termoBuscado}`);
+    const conexaoConvertida = await conexao.json();
+    return conexaoConvertida;
+}
+//=================================================================================
+export const conectaAPI = { listarVideosApi, criaVideo, buscaVideo };
 // listarVideos();
 // export default listarVideosApi;
 // window.conectaAPI = { listarVideos };
